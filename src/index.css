@@ -81,13 +81,13 @@ body {
   text-decoration: none;
 }
 
-.logo-icon {
+/* .logo-icon {
   background: var(--navy);
   color: white;
   padding: 6px;
   border-radius: 8px;
   display: flex;
-}
+} */
 
 .nav-links {
   display: flex;
@@ -413,4 +413,24 @@ body {
   .split-card { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; } /* Hide nav for simple version */
+}
+
+.logo-icon {
+  border: none;              /* Removes the border */
+  border-radius: 12px;       /* CHANGE THIS to your desired radius (e.g., 50% for circle) */
+  overflow: hidden;          /* Crucial: This clips the image to fit the radius */
+  display: flex;             /* Keeps image centered */
+  align-items: center;
+  justify-content: center;
+  background: transparent;   /* Ensures no background color looks like a border */
+}
+
+/* 2. Target the Image */
+.logo-icon img {
+  width: 40px;
+  height: 40px;
+  /* changed to 'cover' so the image fills the rounded shape fully without gaps */
+  object-fit: cover; 
+  display: block;
+  border: none;              /* Ensures the image itself has no border */
 }

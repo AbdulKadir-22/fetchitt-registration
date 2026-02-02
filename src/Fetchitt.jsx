@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from './assets/logo.png';
 
 const FetchittLanding = () => {
   // 1. UI State
@@ -68,7 +69,7 @@ const FetchittLanding = () => {
         <div className="container header-content">
           <a href="/" className="logo">
             <div className="logo-icon">
-              <span className="material-symbols-outlined">package_2</span>
+              <img src={Logo} alt="Fetchitt Logo" />
             </div>
             <span>Fetchitt<span style={{ color: 'var(--primary)' }}>.</span></span>
           </a>
