@@ -50,7 +50,7 @@ function App() {
             <ProblemSection />
             <HowItWorks />
             <UserTypes />
-            <Stats />
+            {/* <Stats /> */}
             <Testimonials />
             <FinalCTA />
           </>
